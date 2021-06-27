@@ -11,22 +11,22 @@ class LocalStorage {
   }
 
   static Future<bool> save(String key, String value) async {
-    return (await sp)!.setString(key, value);
+    return (await sp).setString(key, value);
   }
 
   static dynamic get(String key) async {
-    return (await sp)!.get(key);
+    return (await sp).get(key);
   }
 
   static Future<bool> saveInt(String key, int value) async {
-    return (await sp)!.setInt(key, value);
+    return (await sp).setInt(key, value);
   }
 
   static Future<int?> getInt(String key) async {
-    return (await sp)!.getInt(key);
+    return (await sp).getInt(key);
   }
 
   static Future<bool> remove(String key) async {
-    return (await sp)!.remove(key);
+    return (await sp).remove(key);
   }
 }
